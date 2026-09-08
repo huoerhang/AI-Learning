@@ -1,1 +1,6 @@
-<Solution />
+<Solution>
+  <Folder Name="/1. Models And Interfaces/">
+    <Project Path="AI.Learning.ModelAndInterface.OpenAIModels/AI.Learning.ModelAndInterface.OpenAIModels.csproj" />
+  </Folder>
+  <Project Path="AI.Learning.Common/AI.Learning.Common.csproj" />
+</Solution>
