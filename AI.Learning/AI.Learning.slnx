@@ -1,6 +1,7 @@
 <Solution>
   <Folder Name="/1. Models And Interfaces/">
+    <Project Path="AI.Learning.Common/AI.Learning.Common.csproj" />
     <Project Path="AI.Learning.ModelAndInterface.OpenAIModels/AI.Learning.ModelAndInterface.OpenAIModels.csproj" />
+    <Project Path="AI.Learning.ModelsAndInterfaces.OpenAIChatCompletions/AI.Learning.ModelsAndInterfaces.OpenAIChatCompletions.csproj" Id="2c9a2e8f-8044-4d5b-bc23-d32378788c73" />
   </Folder>
-  <Project Path="AI.Learning.Common/AI.Learning.Common.csproj" />
 </Solution>
