@@ -1,7 +1,11 @@
 <Solution>
   <Folder Name="/1. Models And Interfaces/">
-    <Project Path="AI.Learning.Common/AI.Learning.Common.csproj" />
-    <Project Path="AI.Learning.ModelAndInterface.OpenAIModels/AI.Learning.ModelAndInterface.OpenAIModels.csproj" />
-    <Project Path="AI.Learning.ModelsAndInterfaces.OpenAIChatCompletions/AI.Learning.ModelsAndInterfaces.OpenAIChatCompletions.csproj" Id="2c9a2e8f-8044-4d5b-bc23-d32378788c73" />
+    <Project Path="Models And Interfaces/AI.Learning.ModelAndInterface.OpenAIModels/AI.Learning.ModelAndInterface.OpenAIModels.csproj" />
+    <Project Path="Models And Interfaces/AI.Learning.ModelsAndInterfaces.OpenAIChatCompletions/AI.Learning.ModelsAndInterfaces.OpenAIChatCompletions.csproj" Id="2c9a2e8f-8044-4d5b-bc23-d32378788c73" />
   </Folder>
+  <Folder Name="/2. MAF/">
+    <Project Path="MAF/AI.Learning.MAF. CommunicateWithLLM/AI.Learning.MAF. CommunicateWithLLM.csproj" />
+    <Project Path="MAF/AI.Learning.MAF. ConnectionToLLM/AI.Learning.MAF. ConnectionToLLM.csproj" Id="b02458b9-e187-49ca-9365-e7e962795726" />
+  </Folder>
+  <Project Path="Models And Interfaces/AI.Learning.Common/AI.Learning.Common.csproj" />
 </Solution>

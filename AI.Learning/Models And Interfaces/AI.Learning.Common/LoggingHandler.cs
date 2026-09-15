@@ -2,9 +2,9 @@
 
 namespace AI.Learning.Common
 {
-    public sealed class LoggingHandlerL : DelegatingHandler
+    public sealed class LoggingHandler : DelegatingHandler
     {
-        public LoggingHandlerL(HttpMessageHandler httpMessageHandler):base(httpMessageHandler?? new HttpClientHandler()) 
+        public LoggingHandler(HttpMessageHandler? httpMessageHandler=null):base(httpMessageHandler?? new HttpClientHandler()) 
         {
 
         }
