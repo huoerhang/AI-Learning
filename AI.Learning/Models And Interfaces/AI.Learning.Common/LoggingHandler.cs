@@ -14,7 +14,7 @@ namespace AI.Learning.Common
             if(request.Content is not null)
             {
                 await request.Content.LoadIntoBufferAsync(cancellationToken);
-                Console.WriteLine($"——>{request.Method}{request.RequestUri}");
+                Console.WriteLine($"——> {request.Method} {request.RequestUri}");
                 Console.WriteLine(await request.Content.ReadAsStringAsync());
             }
 

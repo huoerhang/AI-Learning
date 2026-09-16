@@ -4,7 +4,7 @@ namespace AI.Learning.Common
 {
     public static class AIFunctions
     {
-        [Description("获取指定地点的当天天气。")]
+        [Description("获取指定地点的天气。")]
        public static string GetWeather([Description("地点名称")] string location)
         {
             return $"{location} 今天多云，最高 15°C";
