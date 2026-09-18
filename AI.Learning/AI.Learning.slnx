@@ -6,6 +6,7 @@
   <Folder Name="/2. MAF/">
     <Project Path="MAF/AI.Learning.MAF. CommunicateWithLLM/AI.Learning.MAF. CommunicateWithLLM.csproj" />
     <Project Path="MAF/AI.Learning.MAF. ConnectionToLLM/AI.Learning.MAF. ConnectionToLLM.csproj" Id="b02458b9-e187-49ca-9365-e7e962795726" />
+    <Project Path="MAF/AI.Learning.MAF.HistoryRecords/AI.Learning.MAF.HistoryRecords.csproj" Id="3173105c-d93a-4db3-9d75-42740ddf0e95" />
     <Project Path="MAF/AI.Learning.MAF.PipelineAndMiddleware/AI.Learning.MAF.PipelineAndMiddleware.csproj" Id="bc308bdc-4dd3-4ac3-a832-21c4474c25e9" />
   </Folder>
   <Project Path="Models And Interfaces/AI.Learning.Common/AI.Learning.Common.csproj" />
