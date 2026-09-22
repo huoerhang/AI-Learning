@@ -36,19 +36,19 @@ AIAgent agent = new OpenAIClient(
 
 
 // 1. 建一个空 session
-AgentSession restored = await agent.CreateSessionAsync();
+AgentSession session = await agent.CreateSessionAsync();
 
 // 2. 把已知的 ConversationId 塞进 StateBag（provider 那一格）
-restored.StateBag.SetValue("RedisChatHistoryProvider", new RedisChatHistoryProvider.State("conv-3e9b751b124d41829a7c188730ace530"));
+session.StateBag.SetValue("RedisChatHistoryProvider", new RedisChatHistoryProvider.State("conv-3e9b751b124d41829a7c188730ace530"));
 
 Console.WriteLine();
 
-await foreach (var u in agent.RunStreamingAsync("西安的天气怎么样？", restored))
+await foreach (var u in agent.RunStreamingAsync("西安的天气怎么样？", session))
 {
     Console.Write(u);
 }
 
-await foreach (var u in agent.RunStreamingAsync("我上个问题是什么？", restored))
+await foreach (var u in agent.RunStreamingAsync("我上个问题是什么？", session))
 {
     Console.Write(u);
 }
