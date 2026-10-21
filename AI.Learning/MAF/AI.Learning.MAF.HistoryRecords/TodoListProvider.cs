@@ -39,7 +39,7 @@ namespace AI.Learning.MAF.HistoryRecords
 
         private static void SetItem(AgentSession? agentSession,List<string> items)
         {
-            agentSession?.StateBag.SetValue(nameof(TodoListProvider), items));
+            agentSession?.StateBag.SetValue(nameof(TodoListProvider), items);
         }
 
         private static void AddItem(AgentSession? agentSession, string item)
