@@ -15,20 +15,15 @@ using ChatResponseFormat = Microsoft.Extensions.AI.ChatResponseFormat;
 // 1. OpenAI Configuration
 // ========================================
 
-var config = new ConfigurationBuilder()
-    .AddUserSecrets<Program>()
-    .Build();
+var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
 
 var groqSection = config.GetRequiredSection("Groq");
 
-var endpoint = groqSection["Endpoint"]
-    ?? throw new InvalidOperationException("Groq:Endpoint is missing.");
+var endpoint = groqSection["Endpoint"] ?? throw new InvalidOperationException("Groq:Endpoint is missing.");
 
-var modelName = groqSection["Model"]
-    ?? throw new InvalidOperationException("Groq:Model is missing.");
+var modelName = groqSection["Model"] ?? throw new InvalidOperationException("Groq:Model is missing.");
 
-var apiKey = groqSection["ApiKey"]
-    ?? throw new InvalidOperationException("Groq:ApiKey is missing.");
+var apiKey = groqSection["ApiKey"] ?? throw new InvalidOperationException("Groq:ApiKey is missing.");
 
 // ========================================
 // 2. Create OpenAI Chat Client
